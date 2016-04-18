@@ -1,0 +1,330 @@
+html{
+	font-size: 20px;
+}
+.wrap{
+	width: 16rem;
+	font-size: 0.55rem;
+	font-family: "microsoft yahei";
+}
+header{
+	height: 2.525rem;
+	background: -webkit-linear-gradient(#fff,#ebebeb);
+}
+header p{
+	float: left;
+	width: 3.1rem;
+	height: 1.5rem;
+	background: url(../images/back.png) no-repeat;
+	background-size: contain;
+	margin: 0.525rem 0 0 0.55rem;
+}
+h1{
+	float: left;
+	width: 3.7rem;
+	height: 0.975rem;
+	background: url(../images/logo.png) no-repeat;
+	background-size: contain;
+	text-indent: -9999em;
+	margin: 0.775rem 0 0.775rem 2.5rem;
+}
+.content{}
+.banner{
+	position: relative;
+	height: 7.5rem;
+}
+.banner ul{
+	-overflow: hidden;
+	width: 17.025rem;
+	height: 6.675rem;
+}
+.banner ul li{
+	float: left;
+	width: 17.025rem;
+	height: 7.45rem;
+}
+.banner ul img{
+	width: 100%;
+	-width: 17.025rem;
+}
+#swiper-pagination{
+	width: 2.5rem;
+	height: 0.35rem;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -1.25rem;
+}
+#swiper-pagination span{
+	float: left;
+	width: 0.25rem;
+	height: 0.25rem;
+	background: url(../images/spot_r.png) no-repeat;
+	background-size: contain;
+	margin: 0.05rem 0.125rem;
+}
+#swiper-pagination span.on{
+	background: url(../images/spot_r.png) no-repeat;
+	background-size: contain;
+}
+/* 原本ol 的样式 
+.banner ol{
+	width: 2.5rem;
+	height: 0.35rem;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	margin-left: -1.25rem;
+}
+.banner ol li{
+	float: left;
+	width: 0.25rem;
+	height: 0.25rem;
+	background: url(../images/spot.png) no-repeat;
+	background-size: contain;
+	margin: 0.05rem 0.125rem;
+}
+.banner ol li.on{
+	background: url(../images/spot_r.png) no-repeat;
+	background-size: contain;
+}
+*/
+/*导航*/
+nav{}
+nav ul{
+	padding: 0 0.4rem;
+	display: -webkit-box;
+}
+nav ul li{
+	-webkit-box-flex: 1;
+	height: 3.025rem;
+	padding: 0.975rem 0.9rem 0;
+	text-align: center;
+}
+nav ul li i{
+	width: 2rem;
+	height: 2rem;
+	display: block;
+	background: url(../images/01.png) no-repeat;
+	background-size: contain;
+}  
+/*nav ul li :nth-child(2) i{
+	background: url(../images/02.png) no-repeat;
+	background-size: contain;
+}*/
+nav ul li span{
+	display: block;
+	padding-top: 0.475rem;
+}
+/*热卖*/
+.hot{
+	padding: 0 0.5rem;
+}
+.hot_tit{
+	border-bottom: 0.1rem solid #dcdcdc;
+	padding: 1.6rem 0 0.525rem;
+}
+.hot_tit h3{
+	float: left;
+	height: 0.75rem;
+	font-weight: bold;
+	border-left: 0.1rem solid #d51938;
+	padding-left: 0.45rem;
+}
+.hot_tit span{
+	float: right;
+	padding-right: 0.05rem;
+}
+.hot ul{
+	padding-top: 0.775rem;
+}
+.hot ul li{
+	margin-bottom: 0.5rem;
+}
+.hot ul li.bot_mar_none{
+	margin: 0;
+}
+.good_list{
+	float: left;
+}
+.good_list i{
+	float: left;
+	width: 1.5rem;
+	height: 3rem;
+	background: url(../images/l1.jpg) no-repeat;
+	background-size: contain;
+}
+.good_list a{
+	float: left;
+}
+.good_list img{
+	width: 4.5rem;
+}
+.goods_details{
+	float: left;
+	width: 8.45rem;
+	height: 2.425rem;
+	background: #f4f4f4;
+	padding: 0.575rem 0 0 0.55rem;
+	color: #a6a6a6;
+}
+.goods_details .sale{
+	float: left;
+}
+.sale p{
+	height: 1.1rem;
+	line-height: 1.1rem;
+}
+.sale span{
+	height: 1.1rem;
+	line-height: 1.1rem;
+}
+.sale span strong{
+	color: #c7223d;
+}
+.sale i{
+	height: 1.1rem;
+	line-height: 1.1rem;
+	text-decoration: line-through;
+}
+.goods_details .price{
+	float: right;
+	padding-right: 0.5rem;
+	padding-top: 0.45rem;
+}
+.price span{
+	float: left;
+	color: #c7223d;
+	font-size: 1.1rem;
+	font-weight: bold;
+	padding-right: 0.4rem;
+}
+.price i{
+	float: right;
+	width: 0.3rem;
+	height: 0.5rem;
+	background: url(../images/gt.png) no-repeat;
+	background-size: contain;
+	margin-top: 0.3rem;
+}
+/*更多 重用*/
+.more_load{
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	background: #f5f5f5;
+	color: #666;
+	margin-top: 0.5rem;
+}
+/*分类 重用*/
+.classify{
+	padding: 0 0.5rem;
+	margin-top: 0.5rem;
+}
+.classify>a{
+	float: left;
+	background: url(../images/commodity.jpg) no-repeat;
+	background-size: contain;
+	width: 3.75rem;
+	height: 8.8rem;
+	text-indent: -9999em;
+}
+.classify ul{
+	float: right;
+	width: 11.25rem;
+	height: 8.8rem;
+	border-left: 1px solid #eee;
+	border-top: 1px solid #eee;
+	box-sizing: border-box;
+}
+.classify li{
+	float: left;
+	width: 3.725rem;
+	height: 2.2rem;
+	line-height: 2.175rem;
+	text-align: center;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	box-sizing: border-box;
+}
+.classify li a{
+	color: #999;
+}
+.font-red{
+	color: #d51942 !important;
+}
+.live>a{
+	background: url(../images/live.jpg) no-repeat;
+	background-size: contain;
+}
+.brand>a{
+	background: url(../images/brand.jpg) no-repeat;
+	background-size: contain;
+}
+.phone_model{
+	display: -webkit-box;
+	-width: 100%;
+	height: 4rem;
+	padding: 0 0.5rem;
+	margin-top: 0.5rem;
+}
+.phone_model li{
+	-webkit-box-flex: 1;
+	background: url(../images/IOS.jpg) no-repeat;
+	background-size: contain;
+}
+.phone_model li:nth-child(2){
+	background: url(../images/Android.jpg) no-repeat;
+	background-size: contain;
+}
+.phone_model li:nth-child(3){
+	background: url(../images/opinion.jpg) no-repeat;
+	background-size: contain;
+}
+/*登陆注册*/
+.users{
+	margin-top: 0.5rem;
+	width: 100%;
+	height: 1.425rem;
+	background: #f8f8f8;
+	padding-top: 0.775rem;
+}
+.login{
+	float: left;
+	padding-left: 0.775rem;
+}
+.register{
+	padding-left:1.225rem;
+	float: left;
+}
+.users>a{
+	float: right; 
+	position: relative;
+	padding-right: 1.6rem;
+}
+.users>a i{
+	position: absolute;
+	top: 0.15rem;
+	right: 0.7rem;
+	width: 0.425rem;
+	height: 0.225rem;
+	background: url(../images/toTop.png) no-repeat;
+	background-size: contain;
+}
+/*footer*/
+footer{
+	height: 6.575rem;
+	background: #eee;
+	text-align: center;
+	padding: 1.05rem 1.5rem 0.925rem 1.5rem;
+}
+footer p{
+	padding: 0.8rem 0 0.75rem;
+}
+.client{
+	display: block;
+	width: 13rem;
+	height: 4.45rem;
+	background: url(../images/client.png) no-repeat;
+	background-size: contain;
+}
