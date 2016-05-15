@@ -1,7 +1,33 @@
+@media screen and (max-width: 1280px){
+	html body .my_self{
+	    height: 678px;
+	}
+}
+@media screen and (max-width: 1024px){
+	html body .my_self{
+	    height: 551px;
+    }
+}
+@media screen and (max-width: 768px){
+	html body .my_self{
+	    height: 445px;
+    }
+}
+@media screen and (max-width: 640px){
+	html body .my_self{
+	    height: 341px;
+    }
+}
+@media screen and (max-width: 480px){
+	html body .my_self{
+	    height: 165px;
+	}
+}
 .wrap{
 	background: #000;
+	height: 2000px;
 }
-.heading{
+.my_heading{
 	height: 130px;
 	line-height: 130px;
 	color: #fff;
@@ -9,32 +35,85 @@
 	font-weight: 200;
 	text-align: center;
 }
-.header{
+.my_header{
 	position: relative;
+	padding: 0 2em;
+}
+.my_header>div:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	padding-left: 2.2em;
+	padding: 0 1.5em 0 3.4em;
+}
+.my_header>a{
+	font-size: 3em;
+	position: absolute;
+	top: 45%;
+	z-index: 2;
+}
+.my_header>a:hover{
+	text-decoration: none;
+}
+.nav li a:hover{
+	background: rgba(238,238,238,0.3);
+}
+#my_collapse li{
+	position: relative;
+	z-index: 10;
+}
+.my_prev{
+	-margin-top: -50px;
+	left: 1em;
+}
+.my_next{
+	right: 1em;
+}
+.my_search{
+	margin: 16px 30px;
+}
+.my_search>.btn{
+	background-color: rgba(91,192,222,0.5);
+}
+input::-webkit-input-placeholder{ 
+	color: #696868;
+}
+input::-moz-placeholder{ /* Mozilla Firefox 19+ */
+	color: #696868; 
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+	color: #696868;
+} 
+input:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	color: #696868;
+	height: 34px;
+} 
+input[type=search]{
+	text-align: left;
 }
 
-/*图表字体样式*/
-.fold{
+/*图标字体样式*/
+.my_fold{
 	font-size: 20px;
 	color: #fff;
 }
 
-.prev{
-	font-size: 80px;
-	position: absolute;
-	top: 50%;
-	-margin-top: -50px;
-	left: 16px;
-	z-index: 1;
+.my_carousel{
+	height: 700px; 
+	-overflow: hidden;
 }
-.next{}
-
-.carousel{
-	height: 700px;
-	overflow: hidden;
-}
-.carousel li{
-	min-height: 700px;
-	background: url(../img/banner.jpg) no-repeat;
+.my_carousel li{
+	height: 700px; 
+	-background: url(../img/banner-1.jpg) no-repeat;
 	background-size: cover;
+}
+.my_carousel li>a{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.swiper-container{
+	z-index: 0;
 }
